@@ -11,7 +11,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     padding: 16px 0;
     background-color: #EB8309;
     color: #FEFEFE;
@@ -50,6 +50,7 @@ header nav li {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
 
 }
 
@@ -65,13 +66,20 @@ header nav li {
 
     font-size: 28px;
     font-family: "Oswald", sans-serif;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 .container h3 {
 
     font-size: 20px;
     margin: 8px 0;
+
+}
+
+.container p {
+
+    font-size: 20px;
 
 }
 
@@ -86,12 +94,6 @@ header nav li {
 
     display: inline-block;
     padding: 0 15px;
-
-}
-
-.container {
-
-    position: relative;
 
 }
 
@@ -250,9 +252,106 @@ header nav li {
 #PP,
 #escudo,
 #vm,
-#cjs
-{
+#cjs {
 
-scroll-margin-top: 90px;
+    scroll-margin-top: 90px;
 
+}
+
+#as .articles a:hover {
+
+    text-decoration: underline;
+
+}
+
+#contact {
+
+    background-color: #292727;
+}
+
+#contact .container {
+
+    padding: 8px auto;
+    display: block;
+}
+
+.contact-methods {
+
+    font-family: "Oswald", sans-serif;
+    padding: 8px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+
+    color: #FEFEFE;
+}
+
+form input,
+textarea,
+button {
+
+    border: none;
+    background-color: #666262;
+    display: block;
+    width: 260px;
+    margin-bottom: 10px;
+    padding: 8px 0;
+}
+
+form textarea {
+
+    resize: none;
+    height: 80px;
+}
+
+.socialmd li {
+
+    margin-right: 8px;
+}
+
+.socialmd li a {
+
+    text-decoration: none;
+}
+
+form button {
+
+    background-color: #181717;
+    color: #FEFEFE;
+    border: none;
+    cursor: pointer;
+
+}
+
+form button:hover {
+
+    background-color: #666262;
+}
+
+input:focus,
+textarea:focus {
+
+    outline-color: #EB8309;
+}
+
+footer {
+    font-family: "Oswald", sans-serif;
+    background-color: #EB8309;
+    color: #FEFEFE;
+    padding: 8px 0;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+footer .container img {
+    width: 40px;
 }
